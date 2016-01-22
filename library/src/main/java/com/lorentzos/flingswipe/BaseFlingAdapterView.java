@@ -37,7 +37,6 @@ abstract class BaseFlingAdapterView extends AdapterView {
         this.widthMeasureSpec = widthMeasureSpec;
     }
 
-
     public int getWidthMeasureSpec() {
         return widthMeasureSpec;
     }
