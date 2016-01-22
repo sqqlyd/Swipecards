@@ -148,9 +148,9 @@ public class SwipeFlingAdapterView extends BaseFlingAdapterView {
             int childWidthSpec = getChildMeasureSpec(getWidthMeasureSpec(),
                     getPaddingLeft() + getPaddingRight() + lp.leftMargin + lp.rightMargin,
                     lp.width);
-            int childHeightSpec = getChildMeasureSpec(getHeightMeasureSpec(),
+            int childHeightSpec = getChildMeasureSpec(getWidthMeasureSpec(),
                     getPaddingTop() + getPaddingBottom() + lp.topMargin + lp.bottomMargin,
-                    lp.height);
+                    lp.width);
             child.measure(childWidthSpec, childHeightSpec);
         } else {
             cleanupLayoutState(child);
